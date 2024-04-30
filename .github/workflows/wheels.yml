@@ -33,6 +33,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Install SDL2-dev
+      run: sudo apt install libsdl2-dev
+      if: runner.os == 'ubuntu'
+
     - uses: microsoft/setup-msbuild@v2
       if: runner.os == 'Windows'
     # TODO(jfarebro): 02/16/2023 - There's a bug where pkg-config isn't installed on the macOS
