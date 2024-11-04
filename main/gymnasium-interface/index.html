@@ -439,6 +439,16 @@
 </pre></div>
 </div>
 </section>
+<section id="continuous-interface">
+<h2>Continuous Interface<a class="headerlink" href="#continuous-interface" title="Link to this heading">¶</a></h2>
+<p>The Arcade Learning Environment also supports the use of continuous action spaces.
+This idea was first proposed in <a class="reference external" href="https://arxiv.org/pdf/2410.23810">CALE</a>.
+To initialize an interface with continuous action space, simply use the argument <code class="docutils literal notranslate"><span class="pre">continuous=True</span></code> in the environment make:
+I.e.:</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">env</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s1">&#39;ALE/Breakout-v5&#39;</span><span class="p">,</span> <span class="n">continuous</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
 </section>
 
           </article>
@@ -512,6 +522,7 @@
               <ul>
 <li><a class="reference internal" href="#">Gymnasium Interface</a><ul>
 <li><a class="reference internal" href="#visualization">Visualization</a></li>
+<li><a class="reference internal" href="#continuous-interface">Continuous Interface</a></li>
 </ul>
 </li>
 </ul>
